@@ -1,0 +1,62 @@
+{
+  "name": "dsh-night-museum",
+  "version": "0.1.0",
+  "private": false,
+  "description": "A nocturnal task museum for DeepSeek Harness: queue tasks as exhibits, run them on demand or after 18:00, with per-session concurrency and in-order sequencing.",
+  "type": "module",
+  "main": "lib/index.js",
+  "icon": "icon.svg",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/",
+    "assets/icon-512.png",
+    "icon.svg",
+    "cordis.patch.yml",
+    "screenshots.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": []
+    }
+  },
+  "engines": {
+    "node": ">=22",
+    "dsh": ">=0.2.0"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blackCatYoung/dsh-night-museum.git"
+  },
+  "homepage": "https://github.com/blackCatYoung/dsh-night-museum#readme",
+  "bugs": {
+    "url": "https://github.com/blackCatYoung/dsh-night-museum/issues"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "scheduler",
+    "automation",
+    "tasks",
+    "sessions",
+    "night"
+  ],
+  "scripts": {
+    "test": "node test/smoke.mjs && node test/client-render.mjs",
+    "test:host": "node test/smoke.mjs",
+    "test:client": "node test/client-render.mjs"
+  }
+}

@@ -1,0 +1,9 @@
+# Copy this file to awesome-dsh-plugin/data/plugins/blackCatYoung__dsh-night-museum.yml
+# and open a PR (one entry file per PR). The repository must be at least one day old.
+url: https://github.com/blackCatYoung/dsh-night-museum
+name: blackCatYoung/dsh-night-museum
+category: workflow
+icon: https://raw.githubusercontent.com/blackCatYoung/dsh-night-museum/main/assets/icon-512.png
+description:
+  en: "Queue tasks as museum exhibits: get a reminder at 18:00, start with one click, and run each session concurrently while keeping its tasks in order."
+  zh: "把任务录成夜间展品：到 18:00 提醒并可一键开演，不同会话并发、同一会话内按顺序执行，跑完自动闭馆。"

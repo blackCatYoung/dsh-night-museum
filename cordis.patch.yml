@@ -1,0 +1,4 @@
+- insert:
+    - id: dsh-night-museum
+      name: 'dsh-night-museum'
+      config: {}
